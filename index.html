@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nina Carducci - Photographe professionnelle</title>
     <meta name="description" content="Nina Carducci est une photographe professionnelle qui peut faire des séances shooting" />
+    
+    <!-- CSS Stylesheets -->
     <link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style" />
     <link rel="preload" href="./assets/style.min.css" as="style" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/style.min.css" />
+    
+    <!-- Preload Images -->
     <link rel="preload" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.avif" as="image" />
     <link rel="preload" href="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.avif" as="image" />
     <link rel="preload" href="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.avif" as="image" />
@@ -21,67 +28,71 @@
     <link rel="preload" href="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif" as="image" />
     <link rel="preload" href="./assets/images/camera.avif" as="image" />
     <link rel="preload" href="./assets/images/instagram.avif" as="image" />
+    
+    <!-- Preconnect for Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/style.min.css" />
-    <meta charset="UTF-8" />
+    
+    <!-- Fonts -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" />
+    <link media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" />
+    </noscript>
+    
+    <!-- JavaScript -->
     <script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script defer src="./assets/maugallery.min.js"></script>
     <script defer src="./assets/scripts.min.js"></script>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" />
-    <link media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" />
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" />
-    </noscript>
-    <!-- Twitter Card data -->
+    
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@NinaCarducci" />
     <meta name="twitter:title" content="Nina Carducci, photographe professionnelle." />
     <meta name="twitter:description" content="Nina Carduccci est une photographe qui peut faire des shooting pour tout ceux ou celle qui le veulent." />
     <meta name="twitter:image" content="./assets/images/nina.avif" />
-
-    <!-- Open Graph data pour Facebook - Instagram-->
+    
+    <!-- Open Graph for Facebook/Instagram -->
     <meta property="og:title" content="Nina Carducci, photographe professionnelle." />
     <meta property="og:description" content="Nina Carduccci est une photographe qui peut faire des shooting pour tout ceux ou celle qui le veulent." />
     <meta property="og:image" content="./assets/images/nina.avif" />
     <meta property="og:type" content="@NinaCarducci" />
     <meta property="og:url" content="https://vincent-dor.github.io/ninacarducci.github.io/" />
-
+    
     <!-- Rich Snippets -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Nina Carducci Photographe",
-        "image": "./assets/images/nina.avif",
-        "@id": "./assets/images.nina.avif",
-        "url": "https://vincent-dor.github.io/ninacarducci.github.io/",
-        "telephone": "01 23 45 67 89",
-        "priceRange": "50€ 400€",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "68 avenue Alsace-Lorraine",
-          "addressLocality": "Bordeaux",
-          "postalCode": "33200",
-          "addressCountry": "FR"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 44.8465743,
-          "longitude": -0.6065366999999999
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "10:00",
-          "closes": "19:00"
-        },
-        "sameAs": "https://www.instagram.com/ninacarducci.photo/"
-      }
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Nina Carducci Photographe",
+            "image": "./assets/images/nina.avif",
+            "@id": "./assets/images.nina.avif",
+            "url": "https://vincent-dor.github.io/ninacarducci.github.io/",
+            "telephone": "01 23 45 67 89",
+            "priceRange": "50€ 400€",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "68 avenue Alsace-Lorraine",
+                "addressLocality": "Bordeaux",
+                "postalCode": "33200",
+                "addressCountry": "FR"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 44.8465743,
+                "longitude": -0.6065366999999999
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "10:00",
+                "closes": "19:00"
+            },
+            "sameAs": "https://www.instagram.com/ninacarducci.photo/"
+        }
     </script>
-  </head>
+</head>
   <body>
     <header class="top-header">
       <h1 class="name">Nina Carducci</h1>
